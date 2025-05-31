@@ -3,24 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
     <title>Kitchen</title>
+    <!-- <link rel="stylesheet" href="default.css" /> -->
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="/public/fontawesome-free-6.7.2-web/css/all.min.css"
     />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
-    <div class="wrapper chefs-kitchen">
-      <header class="header">
-        <div class="logo">
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <header class="header container flex">
+        <div class="logo flex">
           <img src="/public/images/logo/icon.png" alt="" />
           <h2>Chef's Kitchen</h2>
         </div>
 
         <nav class="nav">
-          <ul>
+          <ul class="flex">
             <li>
               <a href="#home">Home</a>
             </li>
@@ -36,37 +40,285 @@
           </ul>
         </nav>
 
-        <div class="cta">
-          <i class="fa fa-phone" aria-hidden="true"></i>
-          <a href="tel:+237680062425">+(237) 680062425</a>
+        <div class="cta flex">
+          <div class="contact">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <a href="tel:+237680062425">+(237) 680062425</a>
+          </div>
 
-          <div class="btn-group">
+          <div class="flex btn-group">
             <a href="" class="btn btn-primary">Sign in</a>
             <a href="" class="btn btn-secondary">Sign Up</a>
           </div>
         </div>
       </header>
+    </div>
 
-      <main class="main">
-        <section id="home" class="hero row">
-          <div class="headline">
+    <!-- MAIN PAGE -->
+    <main class="main">
+      <!-- HERO SECTION -->
+      <section id="home" class="section hero">
+        <div class="container grid">
+          <div class="hero-headline">
             <h1>Cook anything with the experts</h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Dignissimos sequi, odit necessitatibus aut est enim animi at
               praesentium officia vero.
             </p>
-            <div class="btn-group">
+            <div class="flex btn-group">
               <button class="btn">Let's cook</button>
-              <button class="btn">Explore now</button>
+              <button class="btn btn-outline">Explore now</button>
             </div>
           </div>
 
           <div class="hero-img">
             <img src="/public/images/hero/banner-image.png" alt="" />
+            <div class="pizza flex">
+              <img src="/public/images/hero/pizza.svg" alt="pizza image" />
+              <p>More than 500+ recipes</p>
+            </div>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+
+      <section class="features section" id="features">
+        <div class="container">
+          <div class="heading-container features-headline">
+            <h2 class="section-heading">FEATURES</h2>
+            <h3 class="section-subheading">
+              Get a many of interesting <br />features.
+            </h3>
+          </div>
+
+          <div class="features-features grid">
+            <div class="card menu-variations">
+              <img src="/public/images/Features/featureOne.svg" alt="" />
+              <h3>Menu variations</h3>
+              <details>
+                <summary>Lorem ipsum dolor sit amet.</summary>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                  ducimus quis earum doloribus magnam repellendus recusandae
+                  eveniet, unde, explicabo numquam labore quibusdam omnis alias
+                  in molestias odit laboriosam nostrum vitae.
+                </p>
+              </details>
+              <a href="">Learn More ></a>
+            </div>
+
+            <div class="card cooking-warw">
+              <div class="image">
+                <img src="/public/images/Features/featureTwo.svg" alt="" />
+              </div>
+              <h3>Cooking warw</h3>
+              <details>
+                <summary>Lorem ipsum dolor sit amet.</summary>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                  ducimus quis earum doloribus magnam repellendus recusandae
+                  eveniet, unde, explicabo numquam labore quibusdam omnis alias
+                  in molestias odit laboriosam nostrum vitae.
+                </p>
+              </details>
+              <a href="">Learn More ></a>
+            </div>
+
+            <div class="card best-chef">
+              <img src="/public/images/Features/featureThree.svg" alt="" />
+              <h3>Best chef</h3>
+              <details>
+                <summary>Lorem ipsum dolor sit amet.</summary>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                  ducimus quis earum doloribus magnam repellendus recusandae
+                  eveniet, unde, explicabo numquam labore quibusdam omnis alias
+                  in molestias odit laboriosam nostrum vitae.
+                </p>
+              </details>
+              <a href="">Learn More ></a>
+            </div>
+
+            <div class="card fast-food">
+              <img src="/public/images/Features/featureFour.svg" alt="" />
+              <h3>Fast food</h3>
+              <details>
+                <summary>Lorem ipsum dolor sit amet.</summary>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                  ducimus quis earum doloribus magnam repellendus recusandae
+                  eveniet, unde, explicabo numquam labore quibusdam omnis alias
+                  in molestias odit laboriosam nostrum vitae.
+                </p>
+              </details>
+              <a href="">Learn More ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cook section" id="cook">
+        <div class="container grid">
+          <div class="image">
+            <img src="/public/images/cook/cook.png" alt="" />
+          </div>
+
+          <div class="cook-text">
+            <div class="heading-container">
+              <h2 class="section-heading">COOK WITH US</h2>
+              <h3 class="section-subheading">
+                Cooking together with the expert
+              </h3>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+              tempore hic quia, architecto odio asperiores ab explicabo veniam
+              libero harum expedita cumque aspernatur laboriosam ipsum rem
+              placeat repellendus voluptas voluptate ratione id similique ea ex!
+              Nostrum, maxime earum consequuntur eveniet eos, laudantium numquam
+              voluptates incidunt sit et magnam animi dicta dolor iure vitae,
+              minima esse obcaecati nulla nam hic possimus.
+              <br /><br />Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Optio deserunt dignissimos, earum officiis tempore provident
+              repellendus quasi fugit error quos laboriosam aspernatur aliquam
+              nostrum voluptatum non sint. Neque, nihil assumenda?
+            </p>
+            <button class="btn">Learn more</button>
+          </div>
+        </div>
+        <img class="burger" src="/public/images/cook/burger.png" alt="" />
+      </section>
+
+      <section class="expert section" id="expert">
+        <div class="container">
+          <div class="heading-container">
+            <h2 class="section-heading">EXPERT CHEFS</h2>
+            <h3 class="section-subheading">Let's meet the expert.</h3>
+          </div>
+
+          <div class="grid">
+            <div class="column">
+              <div class="image">
+                <img src="/public/images/Expert/boyone.svg" alt="" />
+                <img
+                  src="/public/images/Expert/Linkedin.svg"
+                  alt=""
+                  class="linkedin"
+                />
+              </div>
+              <h3>Shoo Thar Mien</h3>
+              <h4>Junior Chef</h4>
+            </div>
+
+            <div class="column">
+              <div class="image">
+                <img src="/public/images/Expert/boytwo.svg" alt="" />
+                <img
+                  src="/public/images/Expert/Linkedin.svg"
+                  alt=""
+                  class="linkedin"
+                />
+              </div>
+              <h3>Shoo Thar Mien</h3>
+              <h4>Senior Chef</h4>
+            </div>
+
+            <div class="column">
+              <div class="image">
+                <img src="/public/images/Expert/girl.png" alt="" class="chef" />
+                <img
+                  src="/public/images/Expert/Linkedin.svg"
+                  alt=""
+                  class="linkedin"
+                />
+              </div>
+              <h3>Shoo Thar Mien</h3>
+              <h4>Junior Chef</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section" id="gallery">
+        <div class="container">
+          <div class="heading-container">
+            <h2 class="section-heading">EXPERT CHEFS</h2>
+            <h3 class="section-subheading">Let's meet the expert.</h3>
+          </div>
+
+          <div class="grid">
+            <img
+              class="grid-one"
+              src="/public/images/Gallery/foodone.webp"
+              alt=""
+            />
+            <img
+              class="grid-two"
+              src="/public/images/Gallery/foodtwo.webp"
+              alt=""
+            />
+            <img
+              class="grid-three"
+              src="/public/images/Gallery/foodthree.webp"
+              alt=""
+            />
+            <img
+              class="grid-four"
+              src="/public/images/Gallery/foodfour.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section newsletter" id="newsletter">
+        <div class="container grid">
+          <div class="col">
+            <div class="heading-container">
+              <h2 class="section-heading">NEWSLETTER</h2>
+              <h3 class="section-subheading">Subscribe our newsletter.</h3>
+            </div>
+            <form action="" class="flex">
+              <input
+                type="email"
+                name="subscribe"
+                id="subscribe"
+                placeholder="enter your email address"
+              />
+              <img
+                src="/public/images/Newsletter/arrow.svg"
+                alt=""
+                class="arrow"
+              />
+            </form>
+          </div>
+
+          <div class="images">
+            <img src="/public/images/Newsletter/soup.svg" alt="" class="soup" />
+            <img src="/public/images/Newsletter/blue.svg" alt="" class="blue" />
+            <img
+              src="/public/images/Newsletter/lettuce.svg.svg"
+              alt=""
+              class="lettuce"
+            />
+            <img
+              src="/public/images/Newsletter/yellow.svg.svg"
+              alt=""
+              class="yellow"
+            />
+            <img
+              src="/public/images/Newsletter/onion.svg.svg"
+              alt=""
+              class="onion"
+            />
+            <img src="/public/images/Newsletter/lec.svg" alt="" class="lec" />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
